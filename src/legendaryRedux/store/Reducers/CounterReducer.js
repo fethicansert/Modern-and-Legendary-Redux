@@ -4,7 +4,7 @@ export const DECREMENT = 'DECREMENT';
 export const INCREMENT_BY_AMOUNT = 'INCREMENT_BY_AMOUNT';
 
 const initalState = { //iniital value of reducer 
-    count: 0
+    count: 10 // initial state === 10
 }
 
 const counterReducer = (state = initalState, action) => {

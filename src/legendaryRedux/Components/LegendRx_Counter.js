@@ -9,8 +9,8 @@ const Counter = () => {
     //we can use our action creators with this dispatch function to change state
     const dispatch = useDispatch();
     return (
-        <div style={{marginBottom: '10px'}}>
-            <p>Count: {count}</p>
+        <div className='counter-box' style={{marginBottom: '10px'}}>
+            <p>Count: <span>{count}</span></p>
             <button onClick={() => dispatch(increment())}>Increase</button>
             <button onClick={() => dispatch(decrement())}>Decrease</button>
             <button onClick={() => dispatch(incrementByAmount(10))}>incrementByAmount</button>
@@ -18,4 +18,4 @@ const Counter = () => {
     )
 }
 
-export default Counter
+export default Counter;

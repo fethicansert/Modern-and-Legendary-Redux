@@ -6,11 +6,13 @@ const Counter = () => {
     console.log('Modern Counter Creater');
     const count = useSelector(state => {
         return state.counter
-    });
+    }).value;
+
+    // console.log(useSelector(state => state));
     const dispatch = useDispatch();
     return (
-        <div style={{marginBottom: '10px'}} >
-            <p>Count: {count.value}</p>
+        <div className='counter-box' style={{marginBottom: '10px'}} >
+            <p>Count: <span>{count}</span></p>
             <button onClick={() => dispatch(increment())}>Increment</button>
             <button onClick={() => dispatch(decrement())}>Decrement</button>
             <button onClick={() => dispatch(incrementByMount(10))}>incrementByMount</button>

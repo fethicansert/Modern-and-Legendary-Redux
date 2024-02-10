@@ -17,6 +17,7 @@ root.render(
   </React.StrictMode>
 );
 
+//use createSlice to create reducer action types and action creators
 function ModernRedux(){ //This app create with modern way of redux-react
   return(
     <Provider  store={modernStore}>
@@ -24,7 +25,7 @@ function ModernRedux(){ //This app create with modern way of redux-react
     </Provider>
   );
 }
-
+//I should create 2 exrta file to create action types and creators for reducer function
 function LegenDaryRedux(){//This app create with legendary way of redux-react
   return(
     <Provider store={legendaryStore}>
@@ -32,3 +33,6 @@ function LegenDaryRedux(){//This app create with legendary way of redux-react
     </Provider>
   );
 }
+
+//What is thunk
+// The word "thunk" is a programming term that means "a piece of code that does some delayed work". 
